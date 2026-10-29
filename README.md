@@ -13,9 +13,10 @@ Lean 定理证明转译过程的只读可视化存档：helper DAG、局部 Lean
 | **[全过程]** | unified 全流程：主声明转译（检索/草稿/编译/语义审核/锁定）→ DAG 证明 → 独立 Kernel / 确切导出 / 独立重放 |
 | **[仅DAG证明·给定声明]** | 跳过主声明转译（benchmark 已给形式声明），只做证明转译 |
 
-当前收录四条，全部**证明完成**（给定声明均含完整 Lean 形式陈述）：
+当前收录五条，全部**证明完成**（给定声明均含完整 Lean 形式陈述）：
 
 - **[全过程] FCS76 · 语言族并集不可生成的对角构造** —— 22 节点 / 1972 事件，六段流水线全绿
+- **[仅DAG证明·接续OAI] 186-01 · 超图证明补全** —— 接续 OpenAI math 仓库的图版本 Lean 库完成超图扩展：18 节点全证 / 761 probes / 6351 工具事件，export_verified
 - **[仅DAG证明·给定声明] RLMEval 201 · integral_statInfoFun_curvatureMeasure** —— 868 事件 / 161 probes / 32 次压缩 / 6 节点
 - **[仅DAG证明·给定声明] RLMEval 77 · weak_PFR_asymm** —— 713 事件 / 37 次压缩 / 5 节点
 - **[仅DAG证明·给定声明] RLMEval 121 · KLDiv_add_le_KLDiv_of_indep** —— helper 最多的轨迹：7 节点
